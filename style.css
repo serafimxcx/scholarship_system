@@ -1,0 +1,638 @@
+body{
+    overflow-x: hidden;
+}
+
+.login_body{
+    background-image: url('/scholarship_system/kll_bg.png');
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+.studentlogin_body{
+    background-image: url('/scholarship_system/kll_bg2.png');
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+.includedFees:checked{
+    accent-color: #E13745;    
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: none; 
+border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #DEDEDE; 
+}
+
+a, a:active, a:visited, a:link{
+    text-decoration: none;
+    color: black;
+}
+
+#login_div{
+    width: 40%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    color:#65171e;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.img_logo{
+    height: 5vw;
+    width: auto;
+    margin: 5px;
+}
+
+#btn_login, #btn_saveregister{
+    width: 100%;
+}
+
+#btn_register, #btn_back2login, #btn_forgotpass{
+    font-style: italic;
+    cursor: pointer;
+}
+
+#btn_register:hover{
+    text-decoration: underline;
+}
+
+
+#btn_back2login:hover{
+    text-decoration: underline;
+}
+
+#btn_forgotpass:hover{
+    text-decoration: underline;
+}
+
+
+.header{
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 20px;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #E13745;
+
+}
+
+.user_header{
+    box-shadow: none;
+    background-color: white;
+    color: #E13745;
+
+}
+
+.sidenav {
+    height: 100%;
+    width: 33%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #65171e;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: none;
+}
+
+.sidenav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidenav ul li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidenav ul li a, #m_reports, #m_academic, #btn_logout{
+    display: block;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.448);
+}
+
+.sidenav ul li a:hover{
+    background-color: #b02732;
+    color: white;
+    text-decoration: none;
+}
+
+#btn_logout:hover{
+    background-color: #b02732;
+    color: white;
+    text-decoration: none;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.user_closebtn{
+    visibility: hidden;
+}
+
+.user_sidenav{
+    width: 25%;
+    display:  block;
+    position: fixed;
+}
+
+.user_name{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar-btn {
+    font-size: 30px;
+    cursor: pointer;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+}
+
+.user_navbar{
+    visibility: hidden;
+}
+
+#m_reports:hover{
+    background-color: #b02732;
+    color: white;
+    text-decoration: none;
+}
+
+.reports{
+    text-indent: 50px;
+    display: none;
+}
+
+#m_academic:hover{
+    background-color: #b02732;
+    color: white;
+    text-decoration: none;
+}
+
+.academic{
+    text-indent: 50px;
+    display: none;
+}
+
+
+.glyphicon-triangle-bottom{
+    font-size: 10px;
+}
+
+.glyphicon-triangle-top{
+    font-size: 10px;
+}
+
+.content_container{
+    padding: 20px;
+    margin: 20px;
+    margin-top: 30px;
+    background-color: #ECECEC;
+    border-radius: 10px;
+}
+
+.content_title{
+    color: #6f6f6f;
+    font-size: 17px;
+}
+
+
+label{
+    font-weight: lighter;
+}
+
+.dashboard_container{
+    padding: 30px;
+}
+
+.dashboard_content{
+    padding: 30px;
+    padding-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+}
+
+
+
+
+.dashboard_title{
+    font-weight: bold;
+    color:#E13745;
+    text-transform: uppercase;
+}
+
+.dashboard_counts{
+    background-color: #E13745;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(128, 128, 128, 0.5);
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal2{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(128, 128, 128, 0.5);
+    z-index: 6;
+    justify-content: center;
+    align-items: center;
+    display:none;
+}
+
+.announcement_modal{
+    display: flex;
+}
+
+.admin_container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(197, 197, 197);
+    max-height: 450px;
+    overflow-y: auto;
+}
+
+.admin_title{
+    font-weight:bold;
+}
+
+.records_output, .log_output, .yearlevel_output, .tdprecords_output, .tesrecords_output, .records_container{
+    overflow-x: auto;
+}
+
+#modify_admin_modal{
+    display: none;
+}
+
+#modify_scholarship_modal{
+    display: none;
+}
+
+#modify_fees_modal{
+    display: none;
+}
+
+#modify_yearsem_modal{
+    display: none;
+}
+
+#modify_program_modal{
+    display: none;
+}
+
+#modify_announcement_modal{
+    display: none;
+}
+
+
+#modify_admin_div, #modify_scholarship_div, #modify_fees_div, #modify_yearsem_div, #modify_program_div, #modify_announcement_div{
+    width: 40%;
+    max-height: 90%;
+    overflow: auto;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.announcement_div{
+    width: 50%;
+    max-height: 90%;
+    overflow: auto;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#modify_yearlevel_div, #viewinfo_div{
+    width: 90%;
+    max-height: 90%;
+    overflow: auto;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#accept_applicant_div{
+    width: 40%;
+    max-height: 90%;
+    overflow: auto;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#logout_modal{
+    display: none;
+}
+
+#logout_div{
+    width: 40%;
+    max-height: 90%;
+    overflow: auto;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn_closemodal{
+    padding: 5px 8px;
+    border-radius: 50%; 
+    transition: 0.6s ease;
+}
+
+.btn_closemodal:hover{
+    background-color: #E13745;
+    color: white;
+}
+
+.btn_closemodal2{
+    padding: 5px 8px;
+    border-radius: 50%; 
+    transition: 0.6s ease;
+}
+
+.btn_closemodal2:hover{
+    background-color: #E13745;
+    color: white;
+}
+
+.row{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.btn-default{
+    border-color: #E13745;
+    color: #E13745;
+    transition: .5s ease;
+}
+
+.btn-default:hover{
+    background-color:#b02732;
+    color: white;
+}
+
+.message_div{
+    background-color: white;
+    width: 25%;
+    padding: 4px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-align: center;
+    position: fixed;
+    border-radius: 5px;
+    z-index: 101;
+    top: 5%;
+    left: 38%;
+    display: none;
+    font-style: italic;
+}
+
+.user_content_container{
+    width: 72%;
+    float: right;
+}
+
+.profile_container{
+    height: auto;
+    max-height: none;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+}
+.profile_img {
+    width: 200px; 
+    max-width: 200px; 
+    height: 200px; 
+    max-height: 200px; 
+    border-radius: 10px;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.nav_profile_img{
+    width: 10vw; 
+    max-width: 80px; 
+    height: 10vw; 
+    max-height: 80px; 
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+
+#btn_slctimg{
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.student_name{
+    font-size: 20px;
+}
+
+.pie_chart{
+    height: 20vw;
+    width: auto;
+
+}
+
+.legend {
+    margin-top: 20px;
+    text-align: left;
+}
+.legend_item {
+    margin-bottom: 5px;
+}
+.legend_color {
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.pagination{
+    width: 100%;
+    text-align: center;
+}
+
+.page-link{
+    font-size: 12px;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.btn_pagination{
+    font-weight: bold;
+    color:#E13745;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.user_side_btn_col{
+    text-align: right;
+}
+
+@media (max-width: 1200px){
+    .user_side_btn_col{
+        text-align: left;
+    }
+
+    .pie_chart{
+        height: 30vw;
+        width: auto;
+    
+    }
+    
+    .message_div{
+        width: 80%;
+        left: 10%;
+    }
+
+    .img_logo{
+        height: 10vw;
+        width: auto;
+    }
+
+    .sidenav{
+        width: 60%;
+    }
+
+    .content_container{
+        padding: 30px;
+    }
+
+    .admin_container{
+        margin-bottom: 20px;
+    }
+
+    #modify_admin_div, #login_div, #logout_div, #modify_scholarship_div, #modify_fees_div, #modify_yearsem_div, #modify_program_div, #accept_applicant_div, #modify_announcement_div, .announcement_div{
+        width: 90%;
+    }
+
+    .user_content_container{
+        width: auto;
+        float:none;
+    }
+    
+    .user_closebtn{
+        visibility: visible;
+    }
+
+    .user_navbar{
+        visibility: visible;
+    }
+
+    .user_sidenav{
+        width: 90%;
+        display: none;
+    }
+
+    
+
+    .nav_profile_img{
+        width: 15vw; 
+        height: 15vw; 
+        transform: translateY(10px);
+    }
+    .student_name{
+        font-size: 15px;
+    }
+    
+    #viewinfo_div{
+        padding: 0;
+    }
+
+    #slct_appstatus{
+        margin-top: 10px;
+    }
+}
